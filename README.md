@@ -5,7 +5,7 @@ We don't assume liability of any kind
 For help, support or just talking, you can
 
 * visit our website at [litotex.net](http://litotex.net/) (currently only german)
-* visit our [github](https:github.com/Litotex) repository
+* visit our [github](https://github.com/Litotex) repository
 * or join our IRC-Cannel at [Freenode](irc://freenode.net/#litotex)
 
 Your Litotex Team
@@ -48,7 +48,12 @@ chmod 777 packages/core/cache/ files/cache/ files/packages/cache/ tpl_c/ acp/tpl
 * Create a database (and adjust the settings in the config file) and import all data from `dbUpdates/litotex.sql`
 
 ```bash
-mysql -D litotexDB -u litotexUser -p < dbUpdates/litotex.sql
+mysql -D litotexDB -u litotexUser -p < dbUpdate/litotex.sql
 ```
-Default Uername: 11111
-Default Password:11111
+Admin Login:
+    Username:admin
+    Password:admin
+
+User Login:
+    Username:tester
+    Password:tester

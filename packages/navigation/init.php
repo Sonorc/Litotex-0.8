@@ -63,7 +63,7 @@ class package_navigation extends Package {
 			$menu_item=intval($_GET['menu']);
 		
 		$elements = array();
-        $data = self::$pdb->query("SELECT `ID`, `title`, `description`, `icon`, `package`, `action` FROM `lttx".Package::$pdbn."_navigation` WHERE `parent` IS NULL ORDER BY `sort` ASC");
+        $data = self::$pdb->query("SELECT `ID`, `title`, `description`, `icon`, `package`, `action` FROM `lttx1_navigation` WHERE `parent` IS NULL ORDER BY `sort` ASC");
         foreach($data as $element) {
 			if(!isset($_GET['package'])) $_GET['package'] = 'main';
 			if($element[0] == $menu_item)
@@ -73,8 +73,12 @@ class package_navigation extends Package {
 		
 			$package_name=$element['package'];
 			if ($package_name =="") $package_name="main"; 
-			$element['link'] = "index.php?package=".$package_name."&menu=".$element['ID'];
-			
+                        //Check of external link
+                        if (strpos($package_name, 'http') !== false)
+                            $element['link'] = $package_name;
+			else
+                            $element['link'] = "index.php?package=".$package_name."&menu=".$element['ID'];
+                            
 			$elements[] = $element;
         }
 		
@@ -95,7 +99,7 @@ class package_navigation extends Package {
 			$submenu_item=intval($_GET['submenu']);
 		
 		$elements = array();
-        $data = self::$pdb->prepare("SELECT `ID`, `title`, `description`, `icon`, `package`, `action` FROM `lttx".Package::$pdbn."_navigation` WHERE `parent` =? ORDER BY `sort` ASC");
+        $data = self::$pdb->prepare("SELECT `ID`, `title`, `description`, `icon`, `package`, `action` FROM `lttx1_navigation` WHERE `parent` =? ORDER BY `sort` ASC");
         $data->execute(array($menu_item));
         foreach($data as $element) {
 			if(!isset($_GET['package'])) $_GET['package'] = 'main';
@@ -109,8 +113,13 @@ class package_navigation extends Package {
 			if ($package_name =="") $package_name="main"; 
 			if ($action_name =="") $action_name="main"; 
 			
-			$element['link'] = "index.php?package=".$package_name."&menu=".$menu_item."&submenu=".$element['ID']."&action=".$action_name;
-			if($element[0] == $submenu_item)
+                        //Check of external link
+                        if (preg_match('/^([a-z]*\:\/\/.*)/', $package_name))
+                            $element['link'] = $package_name;
+			else
+                            $element['link'] = "index.php?package=".$package_name."&menu=".$menu_item."&submenu=".$element['ID']."&action=".$action_name;
+			
+                        if($element[0] == $submenu_item)
 				$element['active'] = true;
 			else
 				$element['active'] = false;

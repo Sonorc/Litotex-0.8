@@ -1,4 +1,4 @@
-# Dumping structure for table litotex.lttx1_acp_navigation
+﻿# Dumping structure for table litotex.lttx1_acp_navigation
 DROP TABLE IF EXISTS `lttx1_acp_navigation`;
 CREATE TABLE IF NOT EXISTS `lttx1_acp_navigation` (
   `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -211,7 +211,7 @@ CREATE TABLE IF NOT EXISTS `lttx1_news` (
 ) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 # Dumping data for table litotex.lttx1_news: 11 rows
-INSERT INTO `lttx1_news` (`ID`, `title`, `text`, `category`, `date`, `writtenBy`, `active`, `allow_comments`) VALUES (1, 'neuer Test mit dem ACP Editor', '<p>\r\n	Hier ein kurzer Test .<br />\r\n	Die News wurde im ACP Geschrieben.<br />\r\n	<strong>ACHTUNG !!!</strong><br />\r\n	Da hier das Recht zum kommentieren gegeben ist,<br />\r\n	kann jeder diese News mit einem Kommentar versehen.</p>\r\n<p>\r\n	<br />\r\n	<br />\r\n	Ich geh mal davon aus, das sich da jemand finden wird :)<br />\r\n	<span style="color:#000000;">Das</span> <span style="color:#2f4f4f;">geht </span><span style="color:#40e0d0;">nat&uuml;rlich </span><span style="color:#0000ff;">auch </span>in <span style="color:#daa520;">allen </span><span style="color: rgb(255, 0, 0);">m&ouml;glichen </span><span style="color:#dda0dd;">Farben</span>.<br />\r\n	&nbsp;</p>\r\n', 1, '2010-05-14 22:05:40', 1, 1, 1), (2, 'Neuer TEST1!', '<div>\r\n	Wie siehts denn bisher aus?111</div>\r\n', 12, '2010-05-15 21:05:59', 0, 1, 0), (3, 'Neuer TEST!', '<html>\r\n	<head>\r\n		<title></title>\r\n	</head>\r\n	<body>\r\n		<p>\r\n			Wie siehts denn bisher aus?<br />\r\n			<br />\r\n			Ja, passt soweit ganz jut hier.<br />\r\n			<br />\r\n			noch irgend ein Problem mit [enter] aber ok</p>\r\n	</body>\r\n</html>\r\n', 1, '2010-05-15 21:05:01', 0, 0, 0), (4, 'Neuer TEST!', 'Wie siehts denn bisher aus?', 13, '2010-05-15 21:05:25', 0, 0, 0), (6, 'Neuer TEST!', 'Wie siehts denn bisher aus?', 1, '2010-05-15 21:05:06', 0, 0, 0), (7, 'Neuer TEST!', 'Wie siehts denn bisher aus?', 12, '2010-05-15 21:05:30', 0, 0, 0), (8, 'Neuer TEST!', 'Wie siehts denn bisher aus?', 12, '2010-05-15 21:05:56', 0, 1, 0), (9, 'Neuer TEST!', 'Wie siehts denn bisher aus?', 13, '2010-05-15 21:05:13', 0, 0, 0), (10, 'Neuer TEST!', 'Wie siehts denn bisher aus?', 12, '2010-05-15 22:05:50', 0, 1, 0), (13, 'hg', '<div>\r\n	gfhgfhgfhgfh</div>\r\n', 0, '2012-01-12 15:01:49', 2, 0, 0), (14, 'und noch eine news', '<div>\r\n	diesmal aber mit einem bild<br />\r\n	oder doch nichgt :)</div>\r\n', 13, '2012-01-12 20:01:32', 4, 1, 1);
+INSERT INTO `lttx1_news` (`ID`, `title`, `text`, `category`, `date`, `writtenBy`, `active`, `allow_comments`) VALUES (1, 'neuer Test mit dem ACP Editor', '<p>\r\n	Hier ein kurzer Test .<br />\r\n	Die News wurde im ACP Geschrieben.<br />\r\n	<strong>ACHTUNG !!!</strong><br />\r\n	Da hier das Recht zum kommentieren gegeben ist,<br />\r\n	kann jeder diese News mit einem Kommentar versehen.</p>\r\n<p>\r\n	<br />\r\n	<br />\r\n	Ich geh mal davon aus, das sich da jemand finden wird :)<br />\r\n	<span style="color:#000000;">Das</span> <span style="color:#2f4f4f;">geht </span><span style="color:#40e0d0;">nat&uuml;rlich </span><span style="color:#0000ff;">auch </span>in <span style="color:#daa520;">allen </span><span style="color: rgb(255, 0, 0);">m&ouml;glichen </span><span style="color:#dda0dd;">Farben</span>.<br />\r\n	&nbsp;</p>\r\n', 1, '2010-05-14 22:05:40', 1, 1, 1), (2, 'Neuer TEST1!', '<div>\r\n	Wie siehts denn bisher aus?111</div>\r\n', 12, '2010-05-15 21:05:59', 0, 1, 0), (3, 'Neuer TEST!', '<html>\r\n	<head>\r\n		<title></title>\r\n	</head>\r\n	<body>\r\n		<p>\r\n			Wie siehts denn bisher aus?<br />\r\n			<br />\r\n			Ja, passt soweit ganz jut hier.<br />\r\n			<br />\r\n			noch irgend ein Problem mit [enter] aber ok</p>\r\n	</body>\r\n</html>\r\n', 1, '2010-05-15 21:05:01', 0, 0, 0), (4, 'Neuer TEST!', 'Wie siehts denn bisher aus?', 13, '2010-05-15 21:05:25', 0, 0, 0), (6, 'Neuer TEST!', 'Wie siehts denn bisher aus?', 1, '2010-05-15 21:05:06', 0, 0, 0), (7, 'Neuer TEST!', 'Wie siehts denn bisher aus?', 12, '2010-05-15 21:05:30', 0, 0, 0), (8, 'Neuer TEST!', 'Wie siehts denn bisher aus?', 12, '2010-05-15 21:05:56', 0, 1, 0), (9, 'Neuer TEST!', 'Wie siehts denn bisher aus?', 13, '2010-05-15 21:05:13', 0, 0, 0), (10, 'Neuer TEST!', 'Wie siehts denn bisher aus?', 12, '2010-05-15 22:05:50', 0, 1, 0), (13, 'hg', '<div>\r\n	gfhgfhgfhgfh</div>\r\n', 0, '2012-01-12 15:01:49', 2, 0, 0), (14, 'und noch eine news', '<div>\r\n	diesmal aber mit einem bild<br />\r\n	oder doch nichgt :)</div>\r\n', 13, '2012-01-12 20:01:32', 1, 1, 1);
 
 
 # Dumping structure for table litotex.lttx1_news_categories
@@ -517,17 +517,19 @@ CREATE TABLE IF NOT EXISTS `lttx1_users` (
   `race` int(11) DEFAULT '0',
   `lastActive` datetime DEFAULT NULL,
   `isActive` tinyint(1) NOT NULL DEFAULT '1',
-  `registerDate` date DEFAULT NULL,
+  `registerDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `serverAdmin` tinyint(1) NOT NULL DEFAULT '0',
   `bannedDate` timestamp NULL DEFAULT NULL,
-  `bannedReason` text COLLATE utf8_bin NOT NULL,
+  `bannedReason` text COLLATE utf8_bin,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `username` (`username`),
   KEY `userGroup` (`userGroup`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 # Dumping data for table litotex.lttx1_users: 4 rows
-INSERT INTO `lttx1_users` (`ID`, `userGroup`, `username`, `email`, `password`, `dynamicSalt`, `race`, `lastActive`, `isActive`, `registerDate`, `serverAdmin`, `bannedDate`, `bannedReason`) VALUES (1, 0, 'gh1234', 'meinee@meinemail.com', '3c3a6455e963f07cb69821226e54e9f65bf652545f2eb32bd37b5ad0cc070bfde5531af298796116f2fb29d4c83852c6e22040dd41129e38edf2c69d61934552', '######$bmwe..//\\$###$a//\\cb###$b_§a', 0, '2011-02-27 00:00:00', 1, '2010-09-15', 1, NULL, ''), (2, 0, 'snoop', 'info@litotex.net', '68ddcc4abb7788bc7c112d82c9b192a1325627be7b7fbad34591898a3ac6f42516f02db3f6da582359f3a32e499efe8f1e9ba1c661ec479a642bbc5f301e0bc8', 'b$mwe###1337###//\\//\\..//\\mwe....`§b`//\\ßß?###', 0, '2012-01-12 00:00:00', 1, '2010-09-15', 1, NULL, ''), (3, 0, 'Meister', 'root@meister.com', 'f6ee2f2b4a21c16b71d92beb3c77bce358bb0e41e2f5036e9e317990ea6aa8d70a4c400110a8caaaab3482ee09033a8b39c9aa76ae2716652b3b06f2e04c7ae0', '..$ßß?.._b$aßß?$$§c//\\1337aab1337_', NULL, NULL, 1, NULL, 1, '0000-00-00 00:00:00', ''), (4, 0, '11111', 'testy@web.de', 'f9c84c6349e274cf5f4206c55a1b2b90baa488f360b6131d49e8e678cfd8993929b9444fd728ce62c7f7ae42c2fde93686517db6d00aa826f57c8d06efd3d863', 'mwe_$//\\//\\mwe###..###_b//\\mwemwe###`_`aÂ§', NULL, '2012-01-18 17:35:36', 1, NULL, 1, NULL, '');
+INSERT INTO `lttx1_users` (`ID`, `userGroup`, `username`, `email`, `password`, `dynamicSalt`, `race`, `lastActive`, `isActive`, `registerDate`, `serverAdmin`, `bannedDate`, `bannedReason`) VALUES
+(1, 0, 'tester', 'tester@example.org', 'a41d3bc2e2a28c0f7d65a473f52fb053833c9d5bd43ccb7ed874e7cbc3367e78468becb4ec996c245a2c9822016e9de4c2b5c2539858a49ec737b24f69a5aaa0', 'ßß?###$..mwe###`1337_`mwe`//\\_ccmwe..b1337', 0, NULL, 1, '2012-11-23 21:51:27', 0, NULL, NULL),
+(2, 0, 'admin', 'admin@example.org', '0ec51d22002962759b68dc49edd25818229f6299cc98ef315373b673c2d28fe8bb60a9b1bff9726ab814fa73ebe388bbd38ac55cccc3252fd145d7e51718bd50', 'c§ßß?$1337mwe..b$ßß?..`$mwe``$_//\\..', 0, NULL, 1, '2012-11-23 21:51:43', 1, NULL, NULL);
 
 
 # Dumping structure for table litotex.lttx1_user_groups

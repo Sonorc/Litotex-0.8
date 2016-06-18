@@ -28,9 +28,9 @@
 class plugin_checkbox extends Plugin{
 	public static $handlerName = 'userFields';
 	public static $name = 'checkbox';
-	public static $availableFunctions = array('getHTML', 'checkValid', 'setContent', 'getContent');
+	public static $availableFunctions = array('getHTML', 'checkValid', 'setContent', 'getContent', 'validateContent');
 	public static function getHTML(UserField $field, User $user){
-                return '<input type="checkbox" value="'.self::getContent($user->getUserFieldData($field->ID)).'" name="userfield['.$user->getUserID().']['.$field->ID.']" />';
+                return '<input type="checkbox" value="'.self::getContent($user->getUserFieldData($field->getID())).'" name="userfield['.$user->getUserID().']['.$field->getID().']" />';
 	}
 	public static function checkValid($value){
 		return true;
